@@ -228,33 +228,54 @@ vertical-align: top;
 /*-------------------------------------------
 ITEM
 -------------------------------------------*/
-#item {
-  max-width: 800px;
+// #item {
+//   max-width: 800px;
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 60px;
+// }
+// #item .item-text {
+//   width: 42%;
+// }
+// /*
+// text-align: justify;
+// テキストの両端を揃える
+// */
+// #item .item-text p {
+//   margin-bottom: 30px;
+//   text-align: justify;
+// }
+// #item .item-text dl {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// #item .item-text dt {
+//   width: 30%;
+// }
+// #item .item-text dd {
+//   width: 70%;
+// }
+// #item .item-img {
+//   width: 50%;
+// }
+
+#footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  // position: absolute;
+  // bottom: 20px;
+  // left: 0;
+  // right: 0;
+  position: relative;
+  bottom: 20px;
+  .menu {
+    display: flex;
+    li {
+      font-size: 0.75rem;
+      margin-right: 30px;
+    }
+  }
+  .copyright {
+  font-size: 0.625rem;
 }
-#item .item-text {
-  width: 42%;
-}
-/*
-text-align: justify;
-テキストの両端を揃える
-*/
-#item .item-text p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-#item .item-text dl {
-  display: flex;
-  flex-wrap: wrap;
-}
-#item .item-text dt {
-  width: 30%;
-}
-#item .item-text dd {
-  width: 70%;
-}
-#item .item-img {
-  width: 50%;
 }

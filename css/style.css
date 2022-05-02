@@ -233,47 +233,29 @@ vertical-align: top;
 /*-------------------------------------------
 ITEM
 -------------------------------------------*/
-#item {
-  max-width: 800px;
+#footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 60px;
+  position: relative;
+  bottom: 20px;
 }
 
-#item .item-text {
-  width: 42%;
-}
-
-/*
-text-align: justify;
-テキストの両端を揃える
-*/
-#item .item-text p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-
-#item .item-text dl {
+#footer .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-#item .item-text dt {
-  width: 30%;
+#footer .menu li {
+  font-size: 0.75rem;
+  margin-right: 30px;
 }
 
-#item .item-text dd {
-  width: 70%;
-}
-
-#item .item-img {
-  width: 50%;
+#footer .copyright {
+  font-size: 0.625rem;
 }
 /*# sourceMappingURL=style.css.map */

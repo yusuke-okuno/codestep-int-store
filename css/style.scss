@@ -170,3 +170,91 @@ li {
   z-index: 10;
   cursor: pointer;
 }
+
+/*-------------------------------------------
+TOP、PRODUCTS
+-------------------------------------------*/
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.product-list {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  display:grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(2);
+
+  gap: 30px 3%;
+  // justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+  
+  margin-bottom: 3rem;
+  img {
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+// .product-list li {
+//   width: 23%;
+//   margin-bottom: 40px;
+// }
+/*
+vertical-align: top;
+画像の下にできる隙間を消す
+*/
+
+.link-text {
+  display: block;
+  text-align: center;
+  // margin-top: 100px;
+}
+// .pagination {
+//   display: flex;
+//   justify-content: center;
+// }
+// .pagination li {
+//   padding: 0 20px;
+// }
+
+/*-------------------------------------------
+ITEM
+-------------------------------------------*/
+#item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#item .item-text {
+  width: 42%;
+}
+/*
+text-align: justify;
+テキストの両端を揃える
+*/
+#item .item-text p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+#item .item-text dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+#item .item-text dt {
+  width: 30%;
+}
+#item .item-text dd {
+  width: 70%;
+}
+#item .item-img {
+  width: 50%;
+}

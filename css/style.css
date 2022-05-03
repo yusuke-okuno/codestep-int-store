@@ -195,7 +195,7 @@ li {
 }
 
 /*-------------------------------------------
-TOP、PRODUCTS
+TOPページ、PRODUCTS
 -------------------------------------------*/
 #top {
   padding-top: 80px;
@@ -378,5 +378,51 @@ COMPANY
   width: 100%;
   height: 300px;
   border: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .product-list {
+    -ms-grid-columns: (47%)[2];
+        grid-template-columns: repeat(2, 47%);
+    -ms-grid-rows: ()[6];
+        grid-template-rows: repeat(6);
+  }
+  #item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #item .item-text {
+    width: 100%;
+  }
+  #item .item-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #company dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #company dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+  #company dd {
+    width: 100%;
+    padding-top: 5px;
+  }
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .menu {
+    margin-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

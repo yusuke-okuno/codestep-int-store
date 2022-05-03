@@ -174,7 +174,7 @@ li {
 }
 
 /*-------------------------------------------
-TOP、PRODUCTS
+TOPページ、PRODUCTS
 -------------------------------------------*/
 #top {
   padding-top: 80px;
@@ -188,14 +188,11 @@ TOP、PRODUCTS
   display:grid;
   grid-template-columns: repeat(4, 23%);
   grid-template-rows: repeat(2);
-
   gap: 30px 3%;
   // justify-content: center;
   align-content: center;
-
   justify-items: center;
   align-items: center;
-  
   margin-bottom: 3rem;
   img {
     margin-bottom: 10px;
@@ -329,3 +326,43 @@ COMPANY
   }
 }
 
+// レスポンシブ
+@media screen and (max-width: 900px) {
+  .product-list  {
+    grid-template-columns: repeat(2, 47%);
+    grid-template-rows: repeat(6);
+  }
+
+  #item {
+    flex-direction: column;
+    .item-text {
+      width: 100%;
+    }
+    .item-img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  #company {
+    dl {
+      flex-direction: column;
+    }
+    dt {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 5px;
+    }
+    dd {
+      width: 100%;
+      padding-top: 5px;
+    }
+  }
+  
+  #footer {
+    flex-direction: column;
+    .menu {
+      margin-bottom: 5px;
+    }
+  }
+}

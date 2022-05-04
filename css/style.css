@@ -36,6 +36,11 @@ li {
   padding: 0 40px;
 }
 
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
 .site-title a {
   width: 180px;
   line-height: 1px;
@@ -46,7 +51,6 @@ li {
   font-size: 0.875rem;
   font-weight: normal;
   margin-bottom: 30px;
-  margin-top: 40px;
 }
 
 #header {
@@ -209,7 +213,10 @@ TOPページ、PRODUCTS
       grid-template-columns: repeat(4, 23%);
   -ms-grid-rows: ()[2];
       grid-template-rows: repeat(2);
-  gap: 30px 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 30px;
   -ms-flex-line-pack: center;
       align-content: center;
   justify-items: center;
@@ -380,10 +387,10 @@ COMPANY
   border: 0;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .product-list {
-    -ms-grid-columns: (47%)[2];
-        grid-template-columns: repeat(2, 47%);
+    -ms-grid-columns: (48%)[2];
+        grid-template-columns: repeat(2, 48%);
     -ms-grid-rows: ()[6];
         grid-template-rows: repeat(6);
   }
